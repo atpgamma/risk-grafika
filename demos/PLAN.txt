@@ -1,0 +1,20 @@
+## Uvod u javascript 10-15min
+- deklarisanje promenljivih, objasniti da ne moramo staviti tip ispre vec samo var
+- if, for, forintea, while, switch
+- funkcije, anonimne funkcije, funkcije kao argumetni
+- objekti, kreiranje klase kroz funkciju
+- veza sa html-om, selektovanje elemenata
+
+## Uvod u grafiku i kanvas 10min
+- selektovanje kanvasa
+- koordinatni sistem
+- crtanje pravougaonika
+- animiranje pravougaonika
+- crtanje kruga
+
+## 2D GRAFIKA - P5JS 20 - 25min
+- objasnjavanje setup i draw funkcije
+- crtanje i transformacija koordinatnog pocetka u centar ekrana
+- parametarski zadate krive **oldschool**
+- polarne koordinate **superformula**
+- 
