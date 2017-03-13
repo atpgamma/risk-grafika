@@ -1,11 +1,12 @@
-## Uvod u javascript 10-15min
+## Uvod u javascript 10 -15min
+- #include == <script>sc.js</script>
 - deklarisanje promenljivih, objasniti da ne moramo staviti tip ispre vec samo var
 - if, for, forintea, while, switch
 - funkcije, anonimne funkcije, funkcije kao argumetni
 - objekti, kreiranje klase kroz funkciju
 - veza sa html-om, selektovanje elemenata
 
-## Uvod u grafiku i kanvas 10min
+## Uvod u grafiku i kanvas 10 - 15min
 - selektovanje kanvasa
 - koordinatni sistem
 - crtanje pravougaonika
@@ -15,6 +16,17 @@
 ## 2D GRAFIKA - P5JS 20 - 25min
 - objasnjavanje setup i draw funkcije
 - crtanje i transformacija koordinatnog pocetka u centar ekrana
-- parametarski zadate krive **oldschool**
-- polarne koordinate **superformula**
+- parametarski zadate krive, **oldschool**
+- polarne koordinate, **superformula**
+- prikaz demoa: fraktal, staviti jos nesto ovde!!!
+- inspiracija escher !!!
+
+## 3D GRAFIKA - Three.js 25min
+
+- koordinatni sistem, kamera
+- objasnje sta je mesh
+- objasnjenje sta je materijal
+- osnovna scena u three.js
+- orbit controls
+- svetla
 - 
