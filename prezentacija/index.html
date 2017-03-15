@@ -35,6 +35,9 @@
 					<h5 >2D grafika</h5>
 					<h5 >3D grafika</h5>
 				</section>
+
+
+				<!--  JAVASCRIPT-->
 				<section>
 					<h1><span >C</span><span >--></span> <span >JS</span></h1>
 				</section>
@@ -53,12 +56,14 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						## printf, scanf
+						### promenljive,printf, scanf
 						```javascript
+						// dinamcki jezik
+						// ne naglasavamo tipove
 						var broj = 2;
 						var ime  = "pera";
-						var drugoIme = prompt('Unesi ime...');
-						console.log(ime);
+						var drugoIme = prompt('Unesi ime...'); // scanf
+						console.log(ime); // printf
 						console.log(drugoIme);
 						```
 					</script>
@@ -86,13 +91,12 @@
 						}
 						```
 						```javascript
-						// prompt je slican scanf-u u C-u
 						unos = prompt('Pogodi komandu za izlaz'); 
 						while(unos !== 'exit') {
 							console.log('idemo opet..');
 							unos = prompt('Opet probaj komandu');
 						}
-						console.log('bravo');
+						alert('bravo'); // printf v2
 						```
 					</script>
 				</section>
@@ -141,13 +145,16 @@
 					<script type="text/template">
 						## OOP u JS 
 						```javascript
-						// JSON
+						// JSON == JavaScript Object Notation
 						var pera = {
 							ime: 'pera',
 							prezime: 'peric',
-							index: 'mn12345'
+							pozdrav: function (){
+								alert("Pozdrav od Pere.");
+							}
 						};
 						console.log(pera[ime]);
+						pera.pozdrav();
  						```
 					</script>
 				</section>
@@ -163,13 +170,31 @@
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## CANVAS 
-						##### postavka canvas elementa
-						![](../img/canvas.png)
-					</script>
+
+
+				<!-- CANVAS -->
+				<section>
+
+					<section>
+						<h2>CANVAS</h2>
+						<h3 class="fragment fade-up">koristi za grafiku</h3>
+					</section>
+					<section>
+						<img src="../img/demo.jpeg" alt="">
+					</section>
+					<section>
+						<img src="../img/canvasigra.png" alt="">
+					</section>
 				</section>
+
+
+				<section data-markdown>
+						<script type="text/template">
+							## CANVAS 
+							##### postavka canvas elementa
+							![](../img/canvas.png)
+						</script>
+					</section>
 
 				<section data-markdown>
 					<script type="text/template">
@@ -180,9 +205,24 @@
 						var ctx = canvas.getContext('2d'); // moze i 3D 
 						canvas.height = 500;
 						canvas.width  = 500;
-
-						ctx.fillRect(50,50, 50, 50);
 						``` 
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## paralelogram
+						```javascript
+						// vec imamo ctx
+						ctx.fillRect(20,20,100,200);
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## koordinate
+						![](../img/koordinate.jpeg)
 					</script>
 				</section>
 
@@ -263,6 +303,9 @@
 							var x = 0, y = 20;
 							var xspeed = 2, yspeed = 2;
 							function draw(){
+								ctx.fillStyle = "#232d3d";
+								ctx.fillRect(0, 0, canvas.width, canvas.height);
+								ctx.fillStyle = "red";
 								ctx.fillRect(0, 0, canvas.width, canvas.height);
 								ctx.fillRect(x,y, 10, 10);
 								x += xspeed;
@@ -277,6 +320,14 @@
 							![gif animacije](../animacija.gif)
 						</script>
 					</section>
+				</section>
+
+
+				<!-- P5 -->
+				<section data-markdown>
+					<script type="text/template">
+						## P5.js
+					</script>
 				</section>
 
 
