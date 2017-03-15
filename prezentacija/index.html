@@ -117,6 +117,169 @@
 						```
 					</script>
 				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## OOP  u JS
+						```javascript
+						// objekti se mogu praviti funkcijama
+						function Student(ime, prezime, index) {
+							this.ime = ime;
+							this.prezime = prezime;
+							this.index = index;
+							this.getIme = function (){
+								return this.ime;
+							}
+						}
+
+						var pera = new Student('pera', 'peric', 'mn12345');
+						console.log(pera.getIme());
+						```
+					</script>
+				</section>				
+				<section data-markdown>
+					<script type="text/template">
+						## OOP u JS 
+						```javascript
+						// JSON
+						var pera = {
+							ime: 'pera',
+							prezime: 'peric',
+							index: 'mn12345'
+						};
+						console.log(pera[ime]);
+ 						```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## JS + HTML
+						```javascript
+						// selektovanje elemenata
+						var text = document.getElementById('text');
+						text.style.color = "green"; // menjamo element
+						console.log(text.inner); // citamo iz elementa
+						```
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## CANVAS 
+						##### postavka canvas elementa
+						![](../img/canvas.png)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## JS + CANVAS
+						```javascript
+						// grafika.js
+						var canvas = document.getElementById('canvas');
+						var ctx = canvas.getContext('2d'); // moze i 3D 
+						canvas.height = 500;
+						canvas.width  = 500;
+
+						ctx.fillRect(50,50, 50, 50);
+						``` 
+					</script>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## bojenje
+							```javascript
+							// vec imamo kontekst u ctx
+							ctx.fillStyle = '#ff2d3d';
+							ctx.fillRect(20, 20, 50, 50);
+							ctx.fillStyle = rgb(20, 40, 60);
+							ctx.fillRect(80, 20, 50, 50);
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							![](../img/bojenje.png)
+						</script>
+					</section>
+				</section>
+
+
+
+
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## piramida
+							```javascript
+							for(var i = 0; i < 15; i++)
+								for(var j = 0; j < i; j++){
+									if(i % 2 === 0)
+										ctx.fillStyle = '#ff2d3d';
+									else
+										ctx.fillStyle = 'rgb(20, 40, 60)';
+									ctx.fillRect(j*25, i*25, 20,20);
+								}						```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/tepmlate">
+							![](../img/piramida.png)
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## animacija
+							```javascript
+							var x = 0, y = 20;
+							var xspeed = 2, yspeed = 2;
+							function draw(){
+								ctx.fillRect(x,y, 10, 10);
+								x += xspeed;
+								y += yspeed;
+							}
+							setInterval(draw, 30);
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							![gif animacije](../animacija.gif)
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## bolja animacija
+							```javascript
+							var x = 0, y = 20;
+							var xspeed = 2, yspeed = 2;
+							function draw(){
+								ctx.fillRect(0, 0, canvas.width, canvas.height);
+								ctx.fillRect(x,y, 10, 10);
+								x += xspeed;
+								y += yspeed;
+							}
+							setInterval(draw, 30);
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							![gif animacije](../animacija.gif)
+						</script>
+					</section>
+				</section>
+
+
 			</div>
 		</div>
 
