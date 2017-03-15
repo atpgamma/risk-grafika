@@ -1,9 +1,9 @@
 ## Uvod u javascript 10 -15min
-- #include == <script>sc.js</script>
-- deklarisanje promenljivih, objasniti da ne moramo staviti tip ispre vec samo var
+- deklarisanje promenljivih, objasniti da ne moramo staviti tip ispred vec samo var
 - if, for, forintea, while, switch
-- funkcije, anonimne funkcije, funkcije kao argumetni
-- objekti, kreiranje klase kroz funkciju
+- funkcije, anonimne funkcije, funkcije kao argumenti
+- objekti, kreiranje klase kroz funkciju, JSON
+- #include == <script src="main.js"></script>
 - veza sa html-om, selektovanje elemenata
 
 ## Uvod u grafiku i kanvas 10 - 15min
@@ -11,11 +11,12 @@
 - koordinatni sistem
 - crtanje pravougaonika
 - animiranje pravougaonika
-- crtanje kruga
+- crtanje kruga (mozda)
 
 ## 2D GRAFIKA - P5JS 20 - 25min
 - objasnjavanje setup i draw funkcije
-- crtanje i transformacija koordinatnog pocetka u centar ekrana
+- crtanje osnovnih objekata
+- transformacija koordinatnog pocetka u centar ekrana
 - parametarski zadate krive, **oldschool**
 - polarne koordinate, **superformula**
 - prikaz demoa: fraktal, staviti jos nesto ovde!!!
@@ -29,4 +30,10 @@
 - osnovna scena u three.js
 - orbit controls
 - svetla
-- 
+- RAZOR 1911
+
+## ODVOD
+- Pokazati d3.js, babylon.js(game engine)
+- pokazati zanimljive projekte
+- pokazati unity, unreal, sdl2, opengl
+- reci za gameup sada 18. u domu omladine

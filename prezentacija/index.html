@@ -24,21 +24,98 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section>
+					<h3>Uvod u racunarsku grafiku</h3>
+					<h4 > na web-u</h4>
+				</section>
+				<section>
+					<h3>Veceras prolazimo</h3>
+					<h5 >Javascript</h5>
+					<h5 >Canvas</h5>
+					<h5 >2D grafika</h5>
+					<h5 >3D grafika</h5>
+				</section>
+				<section>
+					<h1><span >C</span><span >--></span> <span >JS</span></h1>
+				</section>
 				<section data-markdown>
 					<script type="text/template">
-						## Uvod u racunarsku grafiku na web-u 
-						
+						## int main()
+						```c
+						#include <stdio.h>
+						int main() {
+							return 0;
+						}
+						```
+						### ==
+						![](../img/include00.png)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## printf, scanf
 						```javascript
-						console.log('komand lineee');
+						var broj = 2;
+						var ime  = "pera";
+						var drugoIme = prompt('Unesi ime...');
+						console.log(ime);
+						console.log(drugoIme);
 						```
 					</script>
 				</section>
 				<section data-markdown>
-				    <script type="text/template">
-				        ## Page title
-
-				        A paragraph with some text and a [link](http://hakim.se).
-				    </script>
+					<script type="text/template">
+						## if then else
+						```javascript
+						if(sati < 12 ){
+							console.log('dobro jutro!');
+						} else if(sati > 12 && sati < 18) {
+							console.log('dobar dan!');
+						} else {
+							console.log('dobro vece');
+						}
+						```		
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## petlje
+						```javascript
+						for(var i =0; i < arr.length; i++){
+							console.log("Zdravo " + arr[i]);
+						}
+						```
+						```javascript
+						// prompt je slican scanf-u u C-u
+						unos = prompt('Pogodi komandu za izlaz'); 
+						while(unos !== 'exit') {
+							console.log('idemo opet..');
+							unos = prompt('Opet probaj komandu');
+						}
+						console.log('bravo');
+						```
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## funkcije
+						```javascript
+						function obavesti(poruka) {
+							alert(poruka);
+						}
+						```
+						```javascript
+						//anonimne funkcije
+						var obavesti = function (poruka) {
+							alert(poruka);
+						}
+						```
+						```javascript
+						function primeni(f, args) {
+							f(args);
+						}
+						```
+					</script>
 				</section>
 			</div>
 		</div>
