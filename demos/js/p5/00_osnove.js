@@ -1,8 +1,10 @@
-void setup() {
+function setup() {
 	createCanvas(640, 480);
 }
 
-void draw() {
+function draw() {
 	ellipse(20, 20, 100, 60);
+	// pomeri koordinate!!!
+
 }	
 
