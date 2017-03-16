@@ -3,8 +3,9 @@ function setup() {
 }
 
 function draw() {
+	// translate, scale, shear, rotate, angleMode
 	ellipse(20, 20, 100, 60);
-	// pomeri koordinate!!!
+
 
 }	
 

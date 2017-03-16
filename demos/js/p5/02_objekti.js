@@ -6,10 +6,10 @@ function draw() {
 	
 	// osnovni oblici
 	fill(20, 40, 60);
-	ellipse(120, 240, 100, 100);
+	ellipse(120, 240, 100, 100); // ellipse(x,y, width, height);
 	fill(112);
-	rect(250, 200, 100, 120);
-	fill('lime');
+	rect(250, 200, 100, 120); // rect(x, y, width, height);
+	fill('aqua');
 	quad(0, 0, 0, 40, 60, 100, 80, 7); //quad(x1,y1,x2,y2,x3,y3,x4,y4); 
 	line(0, 0, 120, 240); // line(x1, y1, x2, y2)
 	fill('red');
@@ -33,5 +33,6 @@ function draw() {
 		vertex(370, 75);
 		vertex(380, 20);
 		vertex(390, 75);
+		vertex(2,2);
 	endShape();
 }

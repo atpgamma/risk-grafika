@@ -324,12 +324,165 @@
 
 
 				<!-- P5 -->
-				<section data-markdown>
-					<script type="text/template">
-						## P5.js
-					</script>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## P5.js
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## osnove
+							```javascript
+							function setup(){
+								// izvrsava se jednom na pocetku
+							}
+
+							function draw() {
+								// izvarsava se 60 puta u sekundi
+							}
+							```
+						</script>
+					</section>	
+
+					<section data-markdown>
+						<script type="text/template">
+							## osnove
+							```javascript
+							function setup(){
+								createCanvas(640, 480);
+							}
+
+							function draw() {
+								ellipse(32, 32, 25, 50);
+							}
+							```
+						</script>
+					</section>	
+
+					<section data-markdown>
+						<script type="text/template">
+							## transformacije
+							```javascript
+							function setup(){
+								createCanvas(640, 480);
+							}
+
+							function draw() {
+								transform(width/2, height/2);
+								scale(2);
+								rotate(30);
+								ellipse(64, 64, 20, 20);
+							}
+							```
+						</script>
+					</section>	
+					<section data-markdown>
+						<script type="text/template">
+							## objekti
+							```javascript
+							ellipse(x, y, width, height);
+							rect(x, y, width, height);
+							line(x1, y1, x2, y2);
+							triangle(x1, y1, x2, y2, x3, y3);
+							quad(x1, y1, x2, y2, x3, y3, x4, y4);
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## parametarske jednacine
+							```
+							x  = g(t)
+							y  = h(t)
+							```
+							```javascript
+							function x(t) {
+								return sin(t);
+							}
+							function y(t) {
+								return cos(t);
+							}
+							``` 
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## polarne koordinate
+							![](../img/polar.gif)
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## superformula
+							![](../img/fla.png) <!-- .element: class="fragment fade-up" -->
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## superformula
+							![](../img/superfla.png) 
+						</script>
+					</section>
+				</section>
+				<!-- INSPIRACIJA 1 -->
+				<section>
+					<section>
+						<h1>M.C Escher</h1>
+						<img src="../img/escher.jpg" alt="">
+					</section>
+					<section>
+						<img src="../img/escher1.jpg" alt="">
+					</section>
+					<section>
+						<img src="../img/escher2.jpg" alt="">
+					</section>
+					<section>
+						<img src="../img/escher3.jpg" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Victor Vasarely</h1>
+						<img src="../img/vaza.jpg" alt="">
+					</section>
+					<section>
+						<img src="../img/vaza1.jpg" alt="">
+					</section>
+					<section>
+						<img src="../img/vaza2.jpg" alt="">
+					</section>
 				</section>
 
+				<!-- 3D, WEBGL, Three.js-->
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## 3D
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							
+						</script>
+					</section>
+
+
+					<section data-markdown>
+						<script type="text/template">
+							
+						</script>
+					</section>
+				</section>
 
 			</div>
 		</div>
