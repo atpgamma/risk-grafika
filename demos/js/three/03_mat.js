@@ -6,10 +6,10 @@ renderer.setSize( 640, 480 );
 document.body.appendChild( renderer.domElement );
 
 var normal = new THREE.MeshNormalMaterial({
-	color: 0xff2d3d
 });
 var basic  = new THREE.MeshBasicMaterial({
-	color: 0xff2d3d
+	color: 0xff2d3d,
+	wireframe: true
 });
 var phong  = new THREE.MeshPhongMaterial({
 	color: 0xff2d3d,
@@ -22,9 +22,11 @@ var lambert = new THREE.MeshLambertMaterial({
 
 
 
-var light = new THREE.DirectionalLight(0xefefff, 1.5);
-light.position.set(1, 1, 1);
-scene.add(light);
+var directional = new THREE.DirectionalLight(0xefefff, 1.5);
+var ambient = new THREE.AmbientLight(0x404040);
+directional.position.set(1, 1, 1);
+scene.add(directional);
+scene.add(ambient);
 
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var cube = new THREE.Mesh(geometry, normal);
@@ -48,14 +50,14 @@ scene.add(cube);
 
 
 
-camera.position.z = 7;
+camera.position.z = 6;
 
 var render = function () {
   requestAnimationFrame( render );
   cube.rotation.x += 0.01;
   torus.rotation.x += 0.01;
   sphere.rotation.x += 0.01;
-  cone.rotation.y += 0.01;
+  cone.rotation.x += 0.01;
   renderer.render( scene, camera );
 };
 

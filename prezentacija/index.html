@@ -524,8 +524,71 @@ render();
 							```
 						</script>
 					</section>
-				</section>
 
+					<section data-markdown>
+						<script type="text/template">
+							## objekti
+							```javascript
+							new THREE.SphereGeometry(1, 5, 5);
+							new THREE.TorusGeometry(1, 0.2, 10, 100);
+							new THREE.BoxGeometry( 1, 1, 1 );
+							new THREE.ConeGeometry(12, 10,10);
+							```
+						</script>
+					</section>
+					
+					<section data-markdown>
+						<script type="text/template">
+							## materijali
+							```javascript
+							var normal = new THREE.MeshNormalMaterial({
+});
+var basic  = new THREE.MeshBasicMaterial({
+	color: 0xff2d3d,
+	wireframe: true
+});
+var phong  = new THREE.MeshPhongMaterial({
+	color: 0xff2d3d,
+	specular:0xffaaff,
+	shininess: 20
+});
+var lambert = new THREE.MeshLambertMaterial({
+	color: 0x11aabb
+});
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## osvetljenje
+							```javascript	
+							new THREE.DirectionalLight(0xffffff, 1.0); 
+							new THREE.AmbientLight(0x404040);
+							new THREE.PointLight( 0xff0000, 1, 100);
+							new THREE.SpotLight( 0xff0000, 1, 100);
+							```
+						</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>demoscene</h1>
+						<img src="../img/razor.png" alt="" class="fragment fade-up">
+					</section>
+					<section>
+						<img src="../img/demo.jpeg" alt="">
+					</section>
+					<section>
+						<img src="../img/demo2.jpeg" alt="">
+					</section>
+					<section>
+						<ul>
+						<li><a href="https://www.kosmoplovci.net">kosmoplovci</a></li>
+							<li><a href="https://www.pouet.net">pouet.net</a></li>
+							<li><a href="http://www.wab.com">we are back</a></li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
